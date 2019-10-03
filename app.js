@@ -12,6 +12,11 @@ const cashback = regularAmount * regularPercent + increasCashbackAmount * increa
 
 console.log(cashback);
 
-const acceptblCashback = 3000;
+const maxCashback = cashback;
+const marginCashback = 3000;
 
+let bonusesPerOneThousand;
+if (maxCashback <= 3000) {
+    bonusesPerOneThousand = maxCashback;  }
 
+console.log(bonusesPerOneThousand);
