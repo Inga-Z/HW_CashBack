@@ -18,7 +18,7 @@ const maxCashback = 3000;
 let ItogCashbak;
 if (factcashback <= 3000) 
 {    ItogCashbak = cashback;  }
-    else (factcashback <= 3000) 
-    {  ItogCashbak = 3000; }
+    else if (factcashback <= 3000) 
+    {  ItogCashbak = cashback; } else {ItogCashbak = 3000};
 
 console.log(ItogCashbak);
