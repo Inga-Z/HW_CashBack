@@ -1,8 +1,8 @@
 console.log('worked');
 
-const regularAmount = 1000;
-const increasCashbackAmount = 1500;
-const specialAmount = 2000;
+const regularAmount = 15000;
+const increasCashbackAmount = 20000;
+const specialAmount = 30000;
 
 const regularPercent = 0.01;
 const increasCashbackPercent = 0.05;
@@ -10,15 +10,16 @@ const specialPercent = 0.3;
 
 const cashback = regularAmount * regularPercent + increasCashbackAmount * increasCashbackPercent + specialAmount * specialPercent;
 
-console.log(cashback);
-
-const factcashback = cashback;
 const maxCashback = 3000;
 
-let ItogCashbak;
-if (factcashback <= 3000) 
-{    ItogCashbak = cashback;  }
-    else if (factcashback <= 3000) 
-    {  ItogCashbak = cashback; } else {ItogCashbak = 3000};
+let itogCashbak;
 
-console.log(ItogCashbak);
+if (cashback <= 3000) {  
+    itogCashbak = cashback;
+} else if (cashback <= 3000) {  
+    itogCashbak = cashback; 
+} else {
+    itogCashbak = 3000;
+};
+
+console.log(itogCashbak);
