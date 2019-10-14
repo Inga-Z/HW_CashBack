@@ -12,13 +12,9 @@ const cashback = regularAmount * regularPercent + increasCashbackAmount * increa
 
 const maxCashback = 3000;
 
-let possibleCashbak;
+let possibleCashbak = cashback;
 
-if (cashback <= maxCashback) {  
-    possibleCashbak = cashback;
-} else if (cashback <= maxCashback) {  
-    possibleCashbak = cashback; 
-} else {
+if (possibleCashbak > maxCashback) {  
     possibleCashbak = maxCashback;
 };
 
